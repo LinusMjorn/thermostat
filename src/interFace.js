@@ -15,6 +15,7 @@ $(document).ready(function () {
     $('#temperature-reset').on('click', function () {
         thermostat.resetTemperature();
         $('#temperature').text(thermostat.temperature)
+        $('#energy-usage').text(thermostat.energyUsage());
     });
     $('#power-saving-status').text(thermostat.powerSaveMode)
     $('#powersaving-on').on('click', function () {
